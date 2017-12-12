@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!--Bootstrap będzie jakby co-->
     <link rel="stylesheet" href="../css/main.css">
@@ -9,41 +10,58 @@
 
 <body>
     <div class="container-fluid">
-            <h1>RUNDA 1</h1>
-        <div class="row">
-            <h2 id="q11" class="col coltheme">Historia obliczeń</h2>
-            <h2 id="q12" class="col coltheme">Zadania logiczne</h2>
-            <h2 id="q13" class="col coltheme">Dawidowe zagadki</h2>
-            <h2 id="q14" class="col coltheme">Ciągi</h2>
-        </div>
-        <div class="row">
-            <div id="q21" class="col colquest flip-card"></div>
-            <div id="q22" class="col colquest"></div>
-            <div id="q23" class="col colquest"></div>
-            <div id="q24" class="col colquest"></div>
-        </div>
-        <div class="row">
-            <div id="q31" class="col colquest"></div>
-            <div id="q32" class="col colquest"></div>
-            <div id="q33" class="col colquest"></div>
-            <div id="q34" class="col colquest"></div>
-        </div>
-        <div class="row">
-            <div id="q41" class="col colquest"></div>
-            <div id="q42" class="col colquest"></div>
-            <div id="q43" class="col colquest"></div>
-            <div id="q44" class="col colquest"></div>
-        </div>
-        <div class="row">
-            <div class="col colteam">
-                <h2>Drużyny:</h2>
+        <h1>RUNDA 1</h1>
+        <div clas="row">
+            <div class="row">
+                <h2 class="col coltheme">Historia obliczeń</h2>
+                <h2 class="col coltheme">Zadania logiczne</h2>
+                <h2 class="col coltheme">Dawidowe zagadki</h2>
+                <h2 class="col coltheme">Ciągi</h2>
             </div>
-            <div id="colteam1" class="col">Drużyna 1<div id="t1pkt">PKT: </div></div>
-            <div id="colteam2" class="col">Drużyna 2<div id="t2pkt">PKT: </div></div>
-            <div id="colteam3" class="col">Drużyna 3<div id="t3pkt">PKT: </div></div>
-            <div id="colteam4" class="col">Drużyna 4<div id="t4pkt">PKT: </div></div>
+            <div class="row">
+                <div id="q41" class="col colquest flip-card"></div>
+                <div id="q22" class="col colquest"></div>
+                <div id="q23" class="col colquest"></div>
+                <div id="q34" class="col colquest"></div>
+            </div>
+            <div class="row">
+                <div id="q41" class="col colquest"></div>
+                <div id="q22" class="col colquest"></div>
+                <div id="q23" class="col colquest"></div>
+                <div id="q34" class="col colquest"></div>
+            </div>
+            <div class="row">
+                <div id="q41" class="col colquest"></div>
+                <div id="q22" class="col colquest"></div>
+                <div id="q23" class="col colquest"></div>
+                <div id="q34" class="col colquest"></div>
+            </div>
+            <div class="row">
+                <div id="colteam1" class="col">Drużyna pierścienia
+                    <div id="t1pkt">PKT: </div>
+                </div>
+                <div id="colteam2" class="col">Wykopowicze
+                    <div id="t2pkt">PKT: </div>
+                </div>
+                <div id="colteam3" class="col">Studenty
+                    <div id="t3pkt">PKT: </div>
+                </div>
+                <div id="colteam4" class="col">Meme Familia
+                    <div id="t4pkt">PKT: </div>
+                </div>
+                <iframe src="https://www.tickcounter.com/timer"></iframe>
+            </div>
+            <div class="row">
+                <div>
+                    Drużyna: <input type="text" class="form-control" id="team">
+                </div>
+                <div>
+                    Ilość punktów: <input type="text" class="form-control" id="points">
+                </div>
+                <button id="btnadd">Dodaj</button>
+            </div>
         </div>
-
     </div>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

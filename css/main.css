@@ -16,11 +16,10 @@ button{
     border-radius: 10px;
     border: 5px solid white;
     opacity: 0.4;
-    color: white
+    color: white;
 }
 
 .col{
-    position: relative;
     border: 5px solid white;
     border-radius: 10px;
     padding: 10px;
@@ -121,22 +120,22 @@ h1::before{
 #colteam1{
     background-image: linear-gradient(to bottom, #ff0000, #4b0000);
     height: 100px;
-    font-size: 30px;
+    font-size: 18px;
 }
 #colteam2{
     background-image: linear-gradient(to bottom, #037b0d, #001f04);
     height: 100px;
-    font-size: 30px;
+    font-size: 20px;
 }
 #colteam3{
     background-image: linear-gradient(to bottom, #a0a700, #202701);
     height: 100px;
-    font-size: 30px;
+    font-size: 20px;
 }
 #colteam4{
     background-image: linear-gradient(to bottom, #b800d9, #3b0435);
     height: 100px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .colteam{
     height: 100px;
@@ -149,4 +148,56 @@ h1::before{
 }
 #t1pkt,#t2pkt,#t3pkt,#t4pkt{
     font-size: 20px;
+}
+#q21{
+    background-image: linear-gradient(to bottom, blue, #120129);
+    border-color: #120129;
+}
+#q22{
+    background-image: linear-gradient(to bottom, green, #022403);
+    border-color: #022403;
+}
+#q23{
+    background-image: linear-gradient(to bottom, #e62749, #3c000b);
+    border-color: #3c000b;
+}
+#q24{
+    background-image: linear-gradient(to bottom, black, black);
+    border-color: black;
+}
+#q31{
+    background-image: linear-gradient(to bottom, #ff3100, #431700);
+    border-color: #431700;
+}
+#q32{
+    background-image: linear-gradient(to bottom, darkviolet, #190024);
+    border-color: #190024;
+}
+#q33{
+    background-image: linear-gradient(to bottom, red, #2a0101);
+    border-color: #2a0101;
+}
+#q34{
+    background-image: linear-gradient(to bottom, brown, #210505);
+    border-color: #210505;
+}
+#q41{
+    background-image: linear-gradient(to bottom, yellow, #2e2e00);
+    border-color: #2e2e00;
+}
+#q42{
+    background-image: linear-gradient(to bottom, white, grey);
+    border-color: grey;
+}
+#q43{
+    background-image: linear-gradient(to bottom, grey, #2a2929);
+    border-color: #2a2929;
+}
+#q44{
+    background-image: linear-gradient(to bottom, white, red);
+    border-color: black;
+}
+#btnadd{
+    width: 150px;
+    height: 50px;
 }
