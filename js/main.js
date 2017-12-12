@@ -39,3 +39,11 @@ document.getElementById("btnadd").addEventListener("click", function(){
      sessionStorage.count4 = Number(sessionStorage.count4) + Number(document.getElementById("points").value);
     odswierz();
 })
+
+document.getElementById("q22").addEventListener("click", function(){
+    document.getElementById("q22").innerHTML="gówno z dupska";
+})
+
+document.getElementById("kolo").addEventListener("click", function(){
+    document.getElementById("kolo").style.transform = 'rotate("30deg")'; 
+})

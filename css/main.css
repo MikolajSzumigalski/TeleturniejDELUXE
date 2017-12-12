@@ -5,8 +5,11 @@
     background-image: linear-gradient(to bottom, #0f0fa0, #04042e);
     color: white;
     padding: 15px;
+    height: 100%;
 }
-
+html, body{
+    height: 100%;
+}
 button{
     display: block;
     width: 400px;
@@ -150,8 +153,8 @@ h1::before{
     font-size: 20px;
 }
 #q21{
-    background-image: linear-gradient(to bottom, blue, #120129);
-    border-color: #120129;
+    background-image: linear-gradient(to bottom, yellow, #2e2e00);
+    border-color: #2e2e00;
 }
 #q22{
     background-image: linear-gradient(to bottom, green, #022403);
@@ -162,20 +165,20 @@ h1::before{
     border-color: #3c000b;
 }
 #q24{
-    background-image: linear-gradient(to bottom, black, black);
-    border-color: black;
+    background-image: linear-gradient(to bottom, brown, #210505);
+    border-color: #210505;
 }
 #q31{
-    background-image: linear-gradient(to bottom, #ff3100, #431700);
-    border-color: #431700;
+    background-image: linear-gradient(to bottom, yellow, #2e2e00);
+    border-color: #2e2e00;
 }
 #q32{
-    background-image: linear-gradient(to bottom, darkviolet, #190024);
-    border-color: #190024;
+    background-image: linear-gradient(to bottom, green, #022403);
+    border-color: #022403;
 }
 #q33{
-    background-image: linear-gradient(to bottom, red, #2a0101);
-    border-color: #2a0101;
+    background-image: linear-gradient(to bottom, #e62749, #3c000b);
+    border-color: #3c000b;
 }
 #q34{
     background-image: linear-gradient(to bottom, brown, #210505);
@@ -186,16 +189,16 @@ h1::before{
     border-color: #2e2e00;
 }
 #q42{
-    background-image: linear-gradient(to bottom, white, grey);
-    border-color: grey;
+   background-image: linear-gradient(to bottom, green, #022403);
+    border-color: #022403;
 }
 #q43{
-    background-image: linear-gradient(to bottom, grey, #2a2929);
-    border-color: #2a2929;
+    background-image: linear-gradient(to bottom, #e62749, #3c000b);
+    border-color: #3c000b;
 }
 #q44{
-    background-image: linear-gradient(to bottom, white, red);
-    border-color: black;
+    background-image: linear-gradient(to bottom, brown, #210505);
+    border-color: #210505;
 }
 #btnadd{
     width: 150px;
