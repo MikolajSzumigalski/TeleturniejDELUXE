@@ -1,17 +1,32 @@
 <!doctype html>
 <html>
-    <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!--Bootstrap będzie jakby co-->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/questions.css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid">
         <h1>RUNDA 2</h1>
-        <img id="kolo" src="../images/grafkolafortuny.png" width="300">
+            <div class="row">
+                <div class="colq">
+                    <img id="kolo" src="../images/grafkolafortuny.png" width="300">
+                </div>
+                <div class="colq">
+                    <div id="quest7" class="questsr2">Memy</div>
+                    <div id="quest1" class="questsr2">Analiza Matematyczna</div>
+                    <div id="quest2" class="questsr2">Historia Obliczeń</div>
+                    <div id="quest3" class="questsr2">Algorytmika</div>
+                    <div id="quest4" class="questsr2">Zadania logiczne</div>
+                    <div id="quest5" class="questsr2">Teoria Prawdopodobieństwa</div>
+                    <div id="quest6" class="questsr2">Systemy pozycyjne</div>
+                </div>
+            </div>
             <div class="row">
                 <div id="colteam1" class="col">Drużyna pierścienia
                     <div id="t1pkt">PKT: </div>
@@ -37,15 +52,13 @@
                 <button id="btnadd">Dodaj</button>
             </div>
             <a id="larrow" href="../index.html">&larr;</a>
-    </div>
-    <audio id="losowanie">
-  <source src="../losowanie.mp3" type="audio/mpeg">
-</audio>
+            <audio id="losowanie">
+              <source src="../losowanie.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../js/runda2.js"></script>
-    <script
-			  src="https://code.jquery.com/jquery-3.2.1.min.js"
-			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </body>
+
 </html>
