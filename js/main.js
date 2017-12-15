@@ -39,19 +39,3 @@ document.getElementById("btnadd").addEventListener("click", function () {
         sessionStorage.count4 = Number(sessionStorage.count4) + Number(document.getElementById("points").value);
     odswierz();
 })
-
-document.getElementById("q21").addEventListener("click", function () {
-            $("#pq21").animate({opacity: '1'}, "slow");    
-            $("#pq21").css('z-index', 1);
-            
-            $("#qbtn21").click(function(){
-                $("#pq21").animate({opacity: '0'}, "slow", function(){
-                    $("#pq21").css('z-index', 0);
-                });
-                $("#q21").css({ "background-image": "none", "background-color": "black" });
-            })
-    
-            $("#abtn21").click(function() {
-                    $("#a21").animate({opacity: '1'}, "slow");        
-            });
-        });
