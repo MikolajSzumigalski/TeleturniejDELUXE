@@ -44,5 +44,6 @@ document.getElementById("q22").addEventListener("click", function () {
 })
 
 document.getElementById("q21").addEventListener("click", function () {
-            $("#pq21").animate({opacity: '1'}, "slow");       
+            $("#pq21").animate({opacity: '1'}, "slow");    
+            $("#pq21").css('z-index', 1);
         });
