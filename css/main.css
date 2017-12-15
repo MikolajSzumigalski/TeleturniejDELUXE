@@ -160,7 +160,7 @@ h1::before{
     top: 17px;
     left: 20px;
 }
-#larrow{
+.larrow{
     font-size: 30px;
     color: white;
     background-color: black;
