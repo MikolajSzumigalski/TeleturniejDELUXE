@@ -25,11 +25,11 @@ button{
 .col{
     border: 5px solid white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     height: 600px;
 }
 
@@ -69,56 +69,9 @@ h1::before{
     background-position: center;
 }
 
-.flip-card {
-  width: 360px;
-  height: 450px;
-  border-radius: 6px;
-  position: relative;
-  perspective: 400px;
-}
-
-.flip-card::before,
-.flip-card::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: #ffffff;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 3px solid #171212;
-  transition: 0.6s transform linear;
-  backface-visibility: hidden;
-}
-
-.flip-card::after {
-  background-image: 
-    repeating-linear-gradient(
-      -45deg,
-      #34b399,
-      #34b399 5px,
-      #8afae3 5px,
-      #8afae3 10px
-    );
-}
-
-.flip-card:active::after {
-  transform: rotateY(180deg);
-}
-
-.flip-card::before {
-  background: url('http://oi64.tinypic.com/au8iyx.jpg');
-  background-size: contain;
-  transform: rotateY(180deg);
-  background-color: #ffffff;
-}
-
-.flip-card:active::before {
-  transform: rotate(360deg);
-}
 
 .colquest{
-    height: 80px;
+    height: 60px;
 }
 #colteam1{
     background-image: linear-gradient(to bottom, #ff0000, #4b0000);
@@ -203,4 +156,16 @@ h1::before{
 #btnadd{
     width: 150px;
     height: 50px;
+    position: relative;
+    top: 17px;
+    left: 20px;
+}
+#larrow{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    float: right;
+    width: 100px;
+    text-align: center;
 }
