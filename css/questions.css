@@ -1,4 +1,5 @@
-#pq21, #pq22, #pq23, #pq24, #pq31, #pq32, #pq33, #pq34, #pq41, #pq42, #pq43, #pq44{
+#pq21, #pq22, #pq23, #pq24, #pq31, #pq32, #pq33, #pq34, #pq41, #pq42, #pq43, #pq44, #bon11, #bon12, #bon13, #bon21, #bon22, #bon23, 
+#bon31, #bon32, #bon33, #bon41, #bon42, #bon43{
     position: absolute;
     width: 90%;
     height: 400px;
@@ -22,7 +23,7 @@
     border: 3px solid grey;
     font-size: 20px;
     opacity: 1;
-    float: right;
+    float: left;
 }
 .opacity{
     opacity: 0;
@@ -34,7 +35,7 @@
     font-size: 15px;
     opacity: 1;
     right: 0;
-    float: right;
+    float: left;
 }
 
 .questsr2{
@@ -78,4 +79,35 @@
     align-self: center;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.bonl{
+    width: 120px;
+    height: 50px;
+    border: 3px solid grey;
+    font-size: 18px;
+    opacity: 1;
+    float: left;
+    background-color: green;
+}
+
+.bons{
+    width: 120px;
+    height: 50px;
+    border: 3px solid grey;
+    font-size: 18px;
+    opacity: 1;
+    float: left;
+    background-color: yellow;
+    color: black;
+}
+
+.bont{
+    width: 120px;
+    height: 50px;
+    border: 3px solid grey;
+    font-size: 18px;
+    opacity: 1;
+    float: left;
+    background-color: red;
 }

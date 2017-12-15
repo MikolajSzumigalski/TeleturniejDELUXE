@@ -40,7 +40,6 @@ document.getElementById("btnadd").addEventListener("click", function () {
 })
 
 document.getElementById("btnpowrot2").addEventListener("click", function () {
-    console.log("dupa");
     sessionStorage.count1 = (Number(sessionStorage.count1)-1000)/100;
     sessionStorage.count2 = (Number(sessionStorage.count2)-1000)/100;
     sessionStorage.count3 = (Number(sessionStorage.count3)-1000)/100;

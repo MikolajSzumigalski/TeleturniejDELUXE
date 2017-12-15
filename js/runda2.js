@@ -20,5 +20,5 @@ document.getElementById("kolo").addEventListener("click", function () {
             });
         });
     };
-    $('#kolo').animateRotate(3000+Math.floor((Math.random() * 360) + 1), 12000);
+    $('#kolo').animateRotate(3000+Math.floor((Math.random() * 360) + 1), 10000);
 });
