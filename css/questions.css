@@ -1,0 +1,17 @@
+#pq21{
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border: 10px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    opacity: 0;
+}

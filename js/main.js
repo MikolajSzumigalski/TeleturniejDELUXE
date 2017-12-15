@@ -27,23 +27,22 @@ function odswierz() {
     }
 }
 
-document.getElementById("btnadd").addEventListener("click", function(){
+document.getElementById("btnadd").addEventListener("click", function () {
     odswierz();
-    if(document.getElementById("team").value == "1")
-     sessionStorage.count1 = Number(sessionStorage.count1) + Number(document.getElementById("points").value);
-    if(document.getElementById("team").value == "2")
-     sessionStorage.count2 = Number(sessionStorage.count2) + Number(document.getElementById("points").value);
-    if(document.getElementById("team").value == "3")
-     sessionStorage.count3 = Number(sessionStorage.count3) + Number(document.getElementById("points").value);
-    if(document.getElementById("team").value == "4")
-     sessionStorage.count4 = Number(sessionStorage.count4) + Number(document.getElementById("points").value);
+    if (document.getElementById("team").value == "1")
+        sessionStorage.count1 = Number(sessionStorage.count1) + Number(document.getElementById("points").value);
+    if (document.getElementById("team").value == "2")
+        sessionStorage.count2 = Number(sessionStorage.count2) + Number(document.getElementById("points").value);
+    if (document.getElementById("team").value == "3")
+        sessionStorage.count3 = Number(sessionStorage.count3) + Number(document.getElementById("points").value);
+    if (document.getElementById("team").value == "4")
+        sessionStorage.count4 = Number(sessionStorage.count4) + Number(document.getElementById("points").value);
     odswierz();
+})
+document.getElementById("q22").addEventListener("click", function () {
+    document.getElementById("q22").innerHTML = "gówno z dupska";
 })
 
-document.getElementById("q22").addEventListener("click", function(){
-    document.getElementById("q22").innerHTML="gówno z dupska";
-})
-
-document.getElementById("kolo").addEventListener("click", function(){
-    document.getElementById("kolo").style.transform = 'rotate("30deg")'; 
-})
+document.getElementById("q21").addEventListener("click", function () {
+            $("#pq21").animate({opacity: '1'}, "slow");       
+        });
