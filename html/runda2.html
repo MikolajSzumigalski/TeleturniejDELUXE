@@ -11,9 +11,41 @@
 <body>
     <div class="container-fluid">
         <h1>RUNDA 2</h1>
-        <img src="../images/grafkolafortuny.png" width="300">
-            <a id="kolo" href="../index.html"><button id="btnadd">Powrót</button></a>
+        <img id="kolo" src="../images/grafkolafortuny.png" width="300">
+            <div class="row">
+                <div id="colteam1" class="col">Drużyna pierścienia
+                    <div id="t1pkt">PKT: </div>
+                </div>
+                <div id="colteam2" class="col">Wykopowicze
+                    <div id="t2pkt">PKT: </div>
+                </div>
+                <div id="colteam3" class="col">Studenty
+                    <div id="t3pkt">PKT: </div>
+                </div>
+                <div id="colteam4" class="col">Meme Familia
+                    <div id="t4pkt">PKT: </div>
+                </div>
+                <iframe src="https://www.tickcounter.com/timer"></iframe>
+            </div>
+            <div class="row">
+                <span>
+                    Drużyna: <input type="text" class="form-control" id="team">
+                </span>
+                <span>
+                    Ilość punktów: <input type="text" class="form-control" id="points">
+                </span>
+                <button id="btnadd">Dodaj</button>
+            </div>
+            <a id="larrow" href="../index.html">&larr;</a>
     </div>
+    <audio id="losowanie">
+  <source src="../losowanie.mp3" type="audio/mpeg">
+</audio>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/runda2.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
 </body>
 </html>
