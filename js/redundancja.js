@@ -41,6 +41,8 @@ function brak_redundancji(row, column) {
                 );
             });
             //ustawienie timera
+            //zakładamy tutaj że parent element jest divem z klasą timer, oraz ma ustawione
+            //data-timer na czas który ma sie pojawić na timerze w sekundach
             var parent_div = document.getElementById("pq" + row + column);
             var children = parent_div.childNodes;
             var timer_div = null;
@@ -48,7 +50,9 @@ function brak_redundancji(row, column) {
             for (var i = 0; i < children.length; i++) {
                 if (children[i].className == "timer") timer_div = children[i];
             }
-            startTimer(parseInt(parent_div.dataset.timer), timer_div);
+            $("#tbtn" + row + column).click(function() {
+                startTimer(parseInt(parent_div.dataset.timer), timer_div);
+            });
         });
 }
 
