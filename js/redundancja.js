@@ -49,106 +49,54 @@ for (var i = 2; i < 5; i++) {
     }
 }
 
-document.getElementById("bbon11").addEventListener("click", function() {
-    console.log("dupa");
-    $("#bon11").animate(
-        {
-            opacity: "1",
-        },
-        "slow"
-    );
-    $("#bon11").css("z-index", 2);
+function brak_redundancji_bonusy(row, column) {
+    document
+        .getElementById("bbon" + row + column)
+        .addEventListener("click", function() {
+            var bon_id = "#bon" + row + column,
+                bbon_id = "#bbon" + row + column,
+                abon_id = "#abon" + row + column,
+                bona_id = "#bona" + row + column,
+                wbtn_id = "#wbtn" + row + column
 
-    $("#wbtn11").click(function() {
-        $("#bon11").animate(
-            {
-                opacity: "0",
-            },
-            "slow",
-            function() {
-                $("#bon11").css("z-index", -1);
-            }
-        );
-        $(".bbon11").css({
-            "background-image": "none",
-            "background-color": "black",
+
+            $(bon_id).animate(
+                {
+                    opacity: "1",
+                },
+                "slow"
+            );
+            $(bon_id).css("z-index", 1);
+
+            $(wbtn_id).click(function() {
+                $(bon_id).animate(
+                    {
+                        opacity: "0",
+                    },
+                    "slow",
+                    function() {
+                        $(bon_id).css("z-index", 0);
+                    }
+                );
+                $(bbon_id).css({
+                    "background-image": "none",
+                    "background-color": "black",
+                });
+            });
+
+            $(abon_id).click(function() {
+                $(bona_id).animate(
+                    {
+                        opacity: "1",
+                    },
+                    "slow"
+                );
+            });
         });
-    });
+}
 
-    $("#abon11").click(function() {
-        $("#bona11").animate(
-            {
-                opacity: "1",
-            },
-            "slow"
-        );
-    });
-});
-document.getElementById("bbon12").addEventListener("click", function() {
-    $("#bon12").animate(
-        {
-            opacity: "1",
-        },
-        "slow"
-    );
-    $("#bon12").css("z-index", 2);
-
-    $("#wbtn12").click(function() {
-        $("#bon12").animate(
-            {
-                opacity: "0",
-            },
-            "slow",
-            function() {
-                $("#bon12").css("z-index", -1);
-            }
-        );
-        $("#bbon12").css({
-            "background-image": "none",
-            "background-color": "black",
-        });
-    });
-
-    $("#abon12").click(function() {
-        $("#bona12").animate(
-            {
-                opacity: "1",
-            },
-            "slow"
-        );
-    });
-});
-document.getElementById("bbon13").addEventListener("click", function() {
-    $("#bon13").animate(
-        {
-            opacity: "1",
-        },
-        "slow"
-    );
-    $("#bon13").css("z-index", 2);
-
-    $("#wbtn13").click(function() {
-        $("#bon13").animate(
-            {
-                opacity: "0",
-            },
-            "slow",
-            function() {
-                $("#bon13").css("z-index", -1);
-            }
-        );
-        $("#bbon13").css({
-            "background-image": "none",
-            "background-color": "black",
-        });
-    });
-
-    $("#abon13").click(function() {
-        $("#bona13").animate(
-            {
-                opacity: "1",
-            },
-            "slow"
-        );
-    });
-});
+for (var i = 1; i < 5; i++) {
+    for (var j = 1; j < 4; j++) {
+        brak_redundancji_bonusy(i, j);
+    }
+}
