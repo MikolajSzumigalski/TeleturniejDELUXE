@@ -8,7 +8,7 @@ document.getElementById("q21").addEventListener("click", function(){
                     $("#pq21").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq21").css('z-index', 0);
+                        $("#pq21").css('z-index', -1);
                     });
                     $("#q21").css({
                         "background-image": "none",
@@ -34,7 +34,7 @@ document.getElementById("q22").addEventListener("click", function(){
                     $("#pq22").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq22").css('z-index', 0);
+                        $("#pq22").css('z-index', -1);
                     });
                     $("#q22").css({
                         "background-image": "none",
@@ -60,7 +60,7 @@ document.getElementById("q23").addEventListener("click", function(){
                     $("#pq23").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq23").css('z-index', 0);
+                        $("#pq23").css('z-index', -1);
                     });
                     $("#q23").css({
                         "background-image": "none",
@@ -86,7 +86,7 @@ document.getElementById("q24").addEventListener("click", function(){
                     $("#pq24").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq24").css('z-index', 0);
+                        $("#pq24").css('z-index', -1);
                     });
                     $("#q24").css({
                         "background-image": "none",
@@ -112,7 +112,7 @@ document.getElementById("q31").addEventListener("click", function(){
                     $("#pq31").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq31").css('z-index', 0);
+                        $("#pq31").css('z-index', -1);
                     });
                     $("#q31").css({
                         "background-image": "none",
@@ -138,7 +138,7 @@ document.getElementById("q32").addEventListener("click", function(){
                     $("#pq32").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq32").css('z-index', 0);
+                        $("#pq32").css('z-index', -1);
                     });
                     $("#q32").css({
                         "background-image": "none",
@@ -164,7 +164,7 @@ document.getElementById("q33").addEventListener("click", function(){
                     $("#pq33").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq33").css('z-index', 0);
+                        $("#pq33").css('z-index', -1);
                     });
                     $("#q33").css({
                         "background-image": "none",
@@ -190,7 +190,7 @@ document.getElementById("q34").addEventListener("click", function(){
                     $("#pq34").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq34").css('z-index', 0);
+                        $("#pq34").css('z-index', -1);
                     });
                     $("#q34").css({
                         "background-image": "none",
@@ -216,7 +216,7 @@ document.getElementById("q41").addEventListener("click", function(){
                     $("#pq41").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq41").css('z-index', 0);
+                        $("#pq41").css('z-index', -1);
                     });
                     $("#q41").css({
                         "background-image": "none",
@@ -241,7 +241,7 @@ document.getElementById("q42").addEventListener("click", function(){
                     $("#pq42").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq42").css('z-index', 0);
+                        $("#pq42").css('z-index', -1);
                     });
                     $("#q42").css({
                         "background-image": "none",
@@ -267,7 +267,7 @@ document.getElementById("q43").addEventListener("click", function(){
                     $("#pq43").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq43").css('z-index', 0);
+                        $("#pq43").css('z-index', -1);
                     });
                     $("#q43").css({
                         "background-image": "none",
@@ -293,7 +293,7 @@ document.getElementById("q44").addEventListener("click", function(){
                     $("#pq44").animate({
                         opacity: '0'
                     }, "slow", function () {
-                        $("#pq44").css('z-index', 0);
+                        $("#pq44").css('z-index', -1);
                     });
                     $("#q44").css({
                         "background-image": "none",
@@ -303,6 +303,108 @@ document.getElementById("q44").addEventListener("click", function(){
 
                 $("#abtn44").click(function () {
                     $("#a44").animate({
+                        opacity: '1'
+                    }, "slow");
+                });
+
+});
+
+document.getElementById("bbon11").addEventListener("click", function(){
+                $("#bon11").animate({
+                    opacity: '1'
+                }, "slow");
+                $("#bon11").css('z-index', 2);
+
+                $("#wbtn11").click(function () {
+                    $("#bon11").animate({
+                        opacity: '0'
+                    }, "slow", function () {
+                        $("#bon11").css('z-index', -1);
+                    });
+                    $("#bbon11").css({
+                        "background-image": "none",
+                        "background-color": "black"
+                    });
+                })
+
+                $("#abon11").click(function () {
+                    $("#bona11").animate({
+                        opacity: '1'
+                    }, "slow");
+                });
+
+});
+document.getElementById("bbon11").addEventListener("click", function(){
+                console.log("dupa");
+                $("#bon11").animate({
+                    opacity: '1'
+                }, "slow");
+                $("#bon11").css('z-index', 2);
+
+                $("#wbtn11").click(function () {
+                    $("#bon11").animate({
+                        opacity: '0'
+                    }, "slow", function () {
+                        $("#bon11").css('z-index', -1);
+                    });
+                    $(".bbon11").css({
+                        "background-image": "none",
+                        "background-color": "black"
+                    });
+                })
+
+                $("#abon11").click(function () {
+                    $("#bona11").animate({
+                        opacity: '1'
+                    }, "slow");
+                });
+
+});
+document.getElementById("bbon12").addEventListener("click", function(){
+                $("#bon12").animate({
+                    opacity: '1'
+                }, "slow");
+                $("#bon12").css('z-index', 2);
+
+                $("#wbtn12").click(function () {
+                    $("#bon12").animate({
+                        opacity: '0'
+                    }, "slow", function () {
+                        $("#bon12").css('z-index', -1);
+                    });
+                    $("#bbon12").css({
+                        "background-image": "none",
+                        "background-color": "black"
+                    });
+                })
+
+                $("#abon12").click(function () {
+                    $("#bona12").animate({
+                        opacity: '1'
+                    }, "slow");
+                });
+
+});
+document.getElementById("bbon13").addEventListener("click", function(){
+                $("#bon13").animate({
+                    opacity: '1'
+                }, "slow");
+                $("#bon13").css('z-index', 2);
+
+                $("#wbtn13").click(function () {
+                    $("#bon13").animate({
+                        opacity: '0'
+                    }, "slow", function () {
+                        $("#bon13").css('z-index', -1);
+                    });
+                    $("#bbon13").css({
+                        "background-image": "none",
+                        "background-color": "black"
+                    });
+                })
+
+                $("#abon13").click(function () {
+                    $("#bona13").animate({
                         opacity: '1'
                     }, "slow");
                 });

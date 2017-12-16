@@ -4,7 +4,7 @@
     width: 90%;
     height: 400px;
     background-color: white;
-    z-index: 0;
+    z-index: -1;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -15,7 +15,8 @@
     font-size: 150%;
     text-align: center;
     opacity: 0;
-    padding: 30px;
+    padding: 10px;
+    top: 0;
 }
 .qbtn{
     width: 100px;
@@ -82,7 +83,7 @@
 }
 
 .bonl{
-    width: 120px;
+    width: 100px;
     height: 50px;
     border: 3px solid grey;
     font-size: 18px;
@@ -92,7 +93,7 @@
 }
 
 .bons{
-    width: 120px;
+    width: 100px;
     height: 50px;
     border: 3px solid grey;
     font-size: 18px;
@@ -103,11 +104,18 @@
 }
 
 .bont{
-    width: 120px;
+    width: 100px;
     height: 50px;
     border: 3px solid grey;
     font-size: 18px;
     opacity: 1;
     float: left;
     background-color: red;
+}
+.bonbuttons{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;  
+    margin-right: 10px;
 }
