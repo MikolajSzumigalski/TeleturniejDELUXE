@@ -18,6 +18,10 @@
     padding: 10px;
     top: 0;
 }
+#bbon11, #bbon12, #bbon13, #bbon21, #bbon22, #bbon23, 
+#bbon31, #bbon32, #bbon33, #bbon41, #bbon42, #bbon43{
+    z-index: 0;
+}
 .qbtn{
     width: 100px;
     height: 50px;
@@ -118,7 +122,4 @@
     align-items: center;
     margin-left: 10px;  
     margin-right: 10px;
-}
-#bbon31{
-    z-index: 4;
 }
