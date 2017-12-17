@@ -129,8 +129,11 @@ function brak_redundancji_bonusy(row, column) {
                 seconds = seconds < 10 ? "0" + seconds : seconds;
 
                 timer_div.innerHTML = minutes + ":" + seconds;
+                // timer_div.style.border = "dashed 5px black";
                 $("#time_btn" + row + column).click(function() {
+                    var id = "#time_btn" + row + column;
                     startTimer(parseInt(parent_div.dataset.timer), timer_div);
+                    $(id).off("click");
                 });
             } else console.warn("There is no timer in " + row + " " + column);
         });
