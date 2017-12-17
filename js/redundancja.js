@@ -51,9 +51,9 @@ function brak_redundancji(row, column) {
                 if (children[i].className == "timer") timer_div = children[i];
             }
             if (timer_div) {
+                //wstawiamy początkową wartość minut i sekund
                 minutes = parseInt(parent_div.dataset.timer / 60, 10);
                 seconds = parseInt(parent_div.dataset.timer % 60, 10);
-
                 minutes = minutes < 10 ? "0" + minutes : minutes;
                 seconds = seconds < 10 ? "0" + seconds : seconds;
 
@@ -113,6 +113,26 @@ function brak_redundancji_bonusy(row, column) {
                     "slow"
                 );
             });
+            var parent_div = document.getElementById("bon" + row + column);
+            var children = parent_div.childNodes;
+            var timer_div = null;
+            //szukamy dziecka z klasą timer
+            for (var i = 0; i < children.length; i++) {
+                if (children[i].className == "timer") timer_div = children[i];
+            }
+            if (timer_div) {
+                console.log("timer div found");
+                //wstawiamy początkową wartość minut i sekund
+                minutes = parseInt(parent_div.dataset.timer / 60, 10);
+                seconds = parseInt(parent_div.dataset.timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                timer_div.innerHTML = minutes + ":" + seconds;
+                $("#time_btn" + row + column).click(function() {
+                    startTimer(parseInt(parent_div.dataset.timer), timer_div);
+                });
+            } else console.warn("There is no timer in " + row + " " + column);
         });
 }
 
