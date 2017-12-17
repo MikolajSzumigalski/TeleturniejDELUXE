@@ -50,18 +50,19 @@ function brak_redundancji(row, column) {
             for (var i = 0; i < children.length; i++) {
                 if (children[i].className == "timer") timer_div = children[i];
             }
-            $("#tbtn" + row + column).click(function() {
-                startTimer(parseInt(parent_div.dataset.timer), timer_div);
-            });
+            if (timer_div) {
+                $("#tbtn" + row + column).click(function() {
+                    startTimer(parseInt(parent_div.dataset.timer), timer_div);
+                });
+            } else console.warn("There is no timer in " + row + " " + column);
         });
 }
 
-// for (var i = 2; i < 5; i++) {
-//     for (var j = 1; j < 5; j++) {
-//         brak_redundancji(i, j);
-//     }
-// }
-brak_redundancji(2, 1);
+for (var i = 2; i < 5; i++) {
+    for (var j = 1; j < 5; j++) {
+        brak_redundancji(i, j);
+    }
+}
 
 function brak_redundancji_bonusy(row, column) {
     document
@@ -71,8 +72,7 @@ function brak_redundancji_bonusy(row, column) {
                 bbon_id = "#bbon" + row + column,
                 abon_id = "#abon" + row + column,
                 bona_id = "#bona" + row + column,
-                wbtn_id = "#wbtn" + row + column
-
+                wbtn_id = "#wbtn" + row + column;
 
             $(bon_id).animate(
                 {
