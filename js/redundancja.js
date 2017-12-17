@@ -51,6 +51,13 @@ function brak_redundancji(row, column) {
                 if (children[i].className == "timer") timer_div = children[i];
             }
             if (timer_div) {
+                minutes = parseInt(parent_div.dataset.timer / 60, 10);
+                seconds = parseInt(parent_div.dataset.timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                timer_div.innerHTML = minutes + ":" + seconds;
                 $("#tbtn" + row + column).click(function() {
                     startTimer(parseInt(parent_div.dataset.timer), timer_div);
                 });
