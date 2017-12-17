@@ -40,14 +40,28 @@ function brak_redundancji(row, column) {
                     "slow"
                 );
             });
+            //ustawienie timera
+            //zakładamy tutaj że parent element jest divem z klasą timer, oraz ma ustawione
+            //data-timer na czas który ma sie pojawić na timerze w sekundach
+            var parent_div = document.getElementById("pq" + row + column);
+            var children = parent_div.childNodes;
+            var timer_div = null;
+            //szukamy dziecka z klasą timer
+            for (var i = 0; i < children.length; i++) {
+                if (children[i].className == "timer") timer_div = children[i];
+            }
+            $("#tbtn" + row + column).click(function() {
+                startTimer(parseInt(parent_div.dataset.timer), timer_div);
+            });
         });
 }
 
-for (var i = 2; i < 5; i++) {
-    for (var j = 1; j < 5; j++) {
-        brak_redundancji(i, j);
-    }
-}
+// for (var i = 2; i < 5; i++) {
+//     for (var j = 1; j < 5; j++) {
+//         brak_redundancji(i, j);
+//     }
+// }
+brak_redundancji(2, 1);
 
 function brak_redundancji_bonusy(row, column) {
     document
