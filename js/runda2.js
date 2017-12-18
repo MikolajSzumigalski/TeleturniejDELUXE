@@ -41,7 +41,6 @@ function odswierz2() {
         sessionStorage.count4 = 0;
         document.getElementById("t34").innerHTML = sessionStorage.count4;
     }
-    document.getElementById("t21").innerHTML
 }
 
 window.onload = odswierz2();
@@ -72,6 +71,7 @@ document.getElementById("kolo").addEventListener("click", function () {
 });
 
 document.getElementById("licytacja").addEventListener("click", function (){
+    odswierz2();
     var pula = document.getElementById("pula").innerHTML
             $("#lic").animate(
                 {
@@ -97,19 +97,29 @@ document.getElementById("licytacja").addEventListener("click", function (){
     if(Number(sessionStorage.count1) >=200){
             sessionStorage.count1 = sessionStorage.count1 - 200;
         sessionStorage.pula = Number(sessionStorage.pula) + 200;
+        document.getElementById("t21").innerHTML = 200;
     }
     if(Number(sessionStorage.count2) >=200){
             sessionStorage.count2 = sessionStorage.count2 - 200;
         sessionStorage.pula = Number(sessionStorage.pula) + 200;
+        document.getElementById("t22").innerHTML = 200;
     }
     if(Number(sessionStorage.count3) >=200){
             sessionStorage.count3 = sessionStorage.count3 - 200;
         sessionStorage.pula = Number(sessionStorage.pula) + 200;
+        document.getElementById("t23").innerHTML = 200;
     }
     if(Number(sessionStorage.count4) >=200){
             sessionStorage.count4 = sessionStorage.count4 - 200;
         sessionStorage.pula = Number(sessionStorage.pula) + 200;
+        document.getElementById("t24").innerHTML = 200;
     }
+    for (var i = 1; i < 5; i++)
+    dodaj_do_puli(i);
+    
+    for (var j = 1; j < 5; j++)
+    va_banque(j);
+    
     odswierz2();
             });
 
@@ -208,3 +218,84 @@ document.getElementById("btnpula").addEventListener("click", function () {
     odswierz2();
     odswierz();
 })
+
+function dodaj_do_puli(column){
+    console.log("somth");
+    document
+        .getElementById("teambtn"+ column)
+        .addEventListener("click", function() {
+        if(column == 1)
+            {
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("teams" + column).value) - Number(document.getElementById("t2"+ column).innerHTML)
+                console.log("somth1");
+                 sessionStorage.count1 = Number(sessionStorage.count1) - document.getElementById("teams" + column).value + Number(document.getElementById("t2"+ column).innerHTML)
+                document.getElementById("t2"+ column).innerHTML = document.getElementById("teams" + column).value 
+                odswierz2();
+            }
+        if(column == 2)
+            {
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("teams" + column).value) - Number(document.getElementById("t2"+ column).innerHTML)
+                console.log("somth2");
+                 sessionStorage.count2 = Number(sessionStorage.count2) - Number(document.getElementById("teams" + column).value) + Number(document.getElementById("t2"+ column).innerHTML)
+                document.getElementById("t2"+ column).innerHTML = document.getElementById("teams" + column).value
+                odswierz2();
+            }
+        if(column == 3)
+            {
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("teams" + column).value) - Number(document.getElementById("t2"+ column).innerHTML)
+                console.log("somth3");
+                 sessionStorage.count3 = Number(sessionStorage.count3) - Number(document.getElementById("teams" + column).value) + Number(document.getElementById("t2"+ column).innerHTML)
+                document.getElementById("t2"+ column).innerHTML = document.getElementById("teams" + column).value 
+                odswierz2();
+            }
+        if(column == 4)
+            {
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("teams" + column).value) - Number(document.getElementById("t2"+ column).innerHTML)
+                console.log("somth4");
+                 sessionStorage.count4 = Number(sessionStorage.count4) - Number(document.getElementById("teams" + column).value) + Number(document.getElementById("t2"+ column).innerHTML)
+                document.getElementById("t2"+ column).innerHTML = document.getElementById("teams" + column).value 
+                
+                odswierz2();
+            }
+        odswierz2();
+    })
+}
+function va_banque(column){
+    document
+        .getElementById("vbtn"+ column)
+        .addEventListener("click", function() {
+        if(column == 1)
+            {
+                var pom1 = Number(document.getElementById("t3" + column).innerHTML) + Number(document.getElementById("t2"+ column).innerHTML) 
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("t3" + column).innerHTML)
+                 sessionStorage.count1 = 0
+                document.getElementById("t2"+ column).innerHTML = pom1
+                odswierz2();
+            }
+        if(column == 2)
+            {
+                var pom2 = Number(document.getElementById("t3" + column).innerHTML) + Number(document.getElementById("t2"+ column).innerHTML) 
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("t3" + column).innerHTML)
+                 sessionStorage.count2 = 0
+                document.getElementById("t2"+ column).innerHTML = pom2
+                odswierz2();
+            }
+        if(column == 3)
+            {
+                var pom3 = Number(document.getElementById("t3" + column).innerHTML) + Number(document.getElementById("t2"+ column).innerHTML) 
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("t3" + column).innerHTML)
+                 sessionStorage.count3 = 0
+                document.getElementById("t2"+ column).innerHTML = pom3
+                odswierz2();
+            }
+        if(column == 4)
+            {
+                var pom4 = Number(document.getElementById("t3" + column).innerHTML) + Number(document.getElementById("t2"+ column).innerHTML) 
+                sessionStorage.pula = Number(sessionStorage.pula) + Number(document.getElementById("t3" + column).innerHTML)
+                 sessionStorage.count4 = 0
+                document.getElementById("t2"+ column).innerHTML = pom4
+                odswierz2();
+            }
+        odswierz2();
+    })
+}
