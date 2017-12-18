@@ -1,5 +1,5 @@
 #pq21, #pq22, #pq23, #pq24, #pq31, #pq32, #pq33, #pq34, #pq41, #pq42, #pq43, #pq44, #bon11, #bon12, #bon13, #bon21, #bon22, #bon23, 
-#bon31, #bon32, #bon33, #bon41, #bon42, #bon43{
+#bon31, #bon32, #bon33, #bon41, #bon42, #bon43, #oq11, #oq12, #oq13, #oq21, #oq22, #oq23, #oq31, #oq32, #oq33, #oq41, #oq42, #oq43, #oq51, #oq52, #oq53, #oq61, #oq62, #oq63, #oq71, #oq72, #oq73{
     position: absolute;
     width: 90%;
     height: 400px;
@@ -51,6 +51,8 @@
     text-align: center;
     padding-top: 10px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 #quest7{
     background-image: linear-gradient(to bottom, brown, #210505);
@@ -122,4 +124,10 @@
     align-items: center;
     margin-left: 10px;  
     margin-right: 10px;
+}
+.image{
+    width: 200px;
+}
+#oq51, #oq53, #oq32{
+    height: 600px;
 }

@@ -7,60 +7,342 @@
     <!--Bootstrap będzie jakby co-->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/questions.css">
+    <link rel="stylesheet" href="../css/questions2.css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid">
         <h1>RUNDA 2</h1>
+        <div id="lic" class="row">
             <div class="row">
-                <div class="colq">
-                    <div id="szczalka"></div>
-                    <img id="kolo" src="../images/grafkolafortuny.png" width="300">
+                <div id="colteam11" class="col">Drużyna pierścienia
+                    <div id="t11pkt">PKT: </div>
+                    Do puli: <div id="t21"></div>
+                    Pozostało: <div id="t31"></div>
+                    <input type="text" class="form-control" id="team">
+                    <button id="t1btn" class="licbtn">Dodaj</button>
                 </div>
-                <div class="colq">
-                    <div id="quest7" class="questsr2">Memy</div>
-                    <div id="quest1" class="questsr2">Analiza Matematyczna</div>
-                    <div id="quest2" class="questsr2">Historia Obliczeń</div>
-                    <div id="quest3" class="questsr2">Algorytmika</div>
+                <div id="colteam12" class="col">Wykopowicze
+                    <div id="t12pkt">PKT: </div>
+                    Do puli: <div id="t22"></div>
+                    Pozostało: <div id="t32"></div>
+                    <input type="text" class="form-control" id="team">
+                    <button id="t1btn" class="licbtn">Dodaj</button>
                 </div>
-                    <div class="colq">
-                    <div id="quest4" class="questsr2">Zadania logiczne</div>
-                    <div id="quest5" class="questsr2">Teoria Prawdopodobieństwa</div>
-                    <div id="quest6" class="questsr2">Systemy pozycyjne</div>
+                <div id="colteam13" class="col">Studenty
+                    <div id="t13pkt">PKT: </div>
+                     Do puli: <div id="t23"></div>
+                    Pozostało: <div id="t33"></div>
+                    <input type="text" class="form-control" id="team">
+                    <button id="t1btn" class="licbtn">Dodaj</button>
+                </div>
+                <div id="colteam14" class="col">Meme Familia
+                    <div id="t14pkt">PKT: </div>
+                     Do puli: <div id="t24"></div>
+                    Pozostało: <div id="t34"></div>
+                    <input type="text" class="form-control" id="team">
+                    <button id="t1btn" class="licbtn">Dodaj</button>
+                </div>
+                <div id="pulacol" class="col">PULA
+                    <div id="pula"> </div>
                 </div>
             </div>
             <div class="row">
-                <div id="colteam1" class="col">Drużyna pierścienia
-                    <div id="t1pkt"> </div>
-                </div>
-                <div id="colteam2" class="col">Wykopowicze
-                    <div id="t2pkt"> </div>
-                </div>
-                <div id="colteam3" class="col">Studenty
-                    <div id="t3pkt"> </div>
-                </div>
-                <div id="colteam4" class="col">Meme Familia
-                    <div id="t4pkt"> </div>
-                </div>
-                <iframe id="licznik" src="https://www.tickcounter.com/timer"></iframe>
+                <button id="licwyj" class="licbtn">Wyjdź</button>
             </div>
-            <div class="row">
-                <span>
+        </div>
+        <div class="row">
+            <div class="colq">
+                <div id="szczalka"></div>
+                <img id="kolo" src="../images/grafkolafortuny.png" width="300">
+                <div id="oq11" data-timer="45">
+                    <p>
+                        Który rodzaj śliwek przesiaduje na “wypoku”? 
+                    </p>
+                    <p id="oa11" class="opacity">
+                        Odp. Mirabelki
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn11" class="abtn">Pokaż odpowiedź</button><button id="oqbtn11" class="qbtn">Wyjdź</button>
+                    <button id="otbtn11" class="abtn">Czas</button>
+                </div>
+                <div id="oq12" data-timer="45">
+                    <p>
+                        <a href="../images/mem1.jpg"><img class="image" src="../images/mem1.jpg"></a>
+                        Dokończ mem
+                    </p>
+                    <p id="oa12" class="opacity">
+                        ODP: Kielicha
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn12" class="abtn">Pokaż odpowiedź</button><button id="oqbtn12" class="qbtn">Wyjdź</button>
+                    <button id="otbtn12" class="abtn">Czas</button>
+                </div>
+                <div id="oq13" data-timer="45">
+                    <p>
+                        W serialu “Plebania” występowała postać, która określała siebie jako osobę “złą, brutalną i nikczemną”. Kto odgrywał rolę tej postaci? Proszę podać imię i nazwisko.
+                    </p>
+                    <p id="oa13" class="opacity">
+                        Dariusz Kowalski
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn13" class="abtn">Pokaż odpowiedź</button><button id="oqbtn13" class="qbtn">Wyjdź</button>
+                    <button id="otbtn13" class="abtn">Czas</button>
+                </div>
+                <div id="oq21" data-timer="45">
+                    <p>
+                        Podaj wartość całki nieoznaczonej x*e^x
+                    </p>
+                    <p id="oa21" class="opacity">
+                        e^x(x-1) + c
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn21" class="abtn">Pokaż odpowiedź</button><button id="oqbtn21" class="qbtn">Wyjdź</button>
+                    <button id="otbtn21" class="abtn">Czas</button>
+                </div>
+                <div id="oq22" data-timer="45">
+                    <p>
+                        <a href="../images/am1.png"><img class="image" src="../images/am1.png"></a>
+                    </p>
+                    <p id="oa22" class="opacity">
+                        <a href="../images/am2.png"><img class="image" src="../images/am2.png"></a>
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn22" class="abtn">Pokaż odpowiedź</button><button id="oqbtn22" class="qbtn">Wyjdź</button>
+                    <button id="otbtn22" class="abtn">Czas</button>
+                </div>
+                <div id="oq23" data-timer="45">
+                    <p>
+                       <a href="../images/am3.png"><img class="image" src="../images/am3.png"></a>
+                        Co definiujemy danym wzorem?
+                    </p>
+                    <p id="oa23" class="opacity">
+                        Odp. Jest to wzór na pochodną funkcji w punkcie
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn23" class="abtn">Pokaż odpowiedź</button><button id="oqbtn23" class="qbtn">Wyjdź</button>
+                    <button id="otbtn23" class="abtn">Czas</button>
+                </div>
+                <div id="oq31" data-timer="45">
+                    <p>
+                      <a href="../images/bab.png"><img class="image" src="../images/bab.png"></a>
+                       Co to za system? Jaka liczba jest tu zapisana?
+                    </p>
+                    <p id="oa31" class="opacity">
+                        Odp. Babiloński, 272
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn31" class="abtn">Pokaż odpowiedź</button><button id="oqbtn31" class="qbtn">Wyjdź</button>
+                    <button id="otbtn31" class="abtn">Czas</button>
+                </div>
+                <div id="oq32" data-timer="45">
+                    <p>
+                        <a href="../images/oko.jpg"><img class="image" src="../images/oko.jpg"></a>
+                        Który element Oka Horusa odpowiada za liczbę 1/16?
+                    </p>
+                    <p id="oa32" class="opacity">
+                        <a href="../images/oko2.png"><img class="image" src="../images/oko2.png"></a>
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn32" class="abtn">Pokaż odpowiedź</button><button id="oqbtn32" class="qbtn">Wyjdź</button>
+                    <button id="otbtn32" class="abtn">Czas</button>
+                </div>
+                <div id="oq33" data-timer="45">
+                    <p>
+                        Jaka była baza i typ systemu w egipskim systemie liczenia?
+                    </p>
+                    <p id="oa33" class="opacity">
+                        ODP: 10 i addytywny
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn33" class="abtn">Pokaż odpowiedź</button><button id="oqbtn33" class="qbtn">Wyjdź</button>
+                    <button id="otbtn33" class="abtn">Czas</button>
+                </div>
+                <div id="oq41" data-timer="45">
+                    <p>
+                        Jak nazywamy strukturę danych działającą na zasadzie bufora LIFO?
+                    </p>
+                    <p id="oa41" class="opacity">
+                        Odp. Stos 
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn41" class="abtn">Pokaż odpowiedź</button><button id="oqbtn41" class="qbtn">Wyjdź</button>
+                    <button id="otbtn41" class="abtn">Czas</button>
+                </div>
+                <div id="oq42" data-timer="45">
+                    <p>
+                        Jak nazywa się algorytm wywołujący sam siebie?
+                    </p>
+                    <p id="oa42" class="opacity">
+                        ODP: Rekurencyjny
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn42" class="abtn">Pokaż odpowiedź</button><button id="oqbtn42" class="qbtn">Wyjdź</button>
+                    <button id="otbtn42" class="abtn">Czas</button>
+                </div>
+                <div id="oq43" data-timer="45">
+                    <p>
+                       <a href="../images/bubble.gif"><img class="image" src="../images/bubble.gif"></a>
+                        Jaki algorytm sortujący przedstawia animacja?
+                    </p>
+                    <p id="oa43" class="opacity">
+                        Odp: Sortowanie bąbelkowe
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn43" class="abtn">Pokaż odpowiedź</button><button id="oqbtn43" class="qbtn">Wyjdź</button>
+                    <button id="otbtn43" class="abtn">Czas</button>
+                </div>
+                <div id="oq51" data-timer="45">
+                    <p>
+                       <a href="../images/dot.png"><img class="image" src="../images/dot.png"></a>
+                        Za pomocą czterech prostych linii połączyć wszystkie kropki, każdą następną linię zaczynamy tam gdzie skończyliśmy poprzednią.
+                    </p>
+                    <p id="oa51" class="opacity">
+                        <a href="../images/dot2.gif"><img class="image" src="../images/dot2.gif"></a>
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn51" class="abtn">Pokaż odpowiedź</button><button id="oqbtn51" class="qbtn">Wyjdź</button>
+                    <button id="otbtn51" class="abtn">Czas</button>
+                </div>
+                <div id="oq52" data-timer="45">
+                    <p>
+                        Dodaj jedną kreskę, aby równanie było prawdziwe :
+                        <a href="../images/zag1.png"><img class="image" src="../images/zag1.png"></a>
+                        
+                    </p>
+                    <p id="oa52" class="opacity">
+                        <a href="../images/zag2.png"><img class="image" src="../images/zag2.png"></a>
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn52" class="abtn">Pokaż odpowiedź</button><button id="oqbtn52" class="qbtn">Wyjdź</button>
+                    <button id="otbtn52" class="abtn">Czas</button>
+                </div>
+                <div id="oq53" data-timer="45">
+                    <p>
+                        Panowie Czapski, Młot, Rogalik i Kiełbasa są doskonałymi rzemieślnikami i reprezentują zawody: czapnika, kowala, piekarza oraz rzeźnika. Żaden z nich nie nosi nazwiska wiążącego się z wykonywanym zawodem. Ani Młot, ani Rogalik nie jest czapnikiem. Rzeźnikiem nie jest Czapski. Kowalem nie jest Rogalik. Kto kim jest?
+                    </p>
+                    <p id="oa53" class="opacity">
+                        Z tego wszystkiego wynika, że jeżeli z trzech pierwszych rzemieślników nikt nie jest czapnikiem - musi nim być Kiełbasa. Rogalik jest więc rzeźnik. Skoro Młot nie może być kowalem - musi być piekarzem. Wobec tego Czapski jest kowalem.
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn53" class="abtn">Pokaż odpowiedź</button><button id="oqbtn53" class="qbtn">Wyjdź</button>
+                    <button id="otbtn53" class="abtn">Czas</button>
+                </div>
+                <div id="oq61" data-timer="45">
+                    <p>
+                        Jakie jest prawdopodobieństwo wylosowania postaci czarnego koloru w standardowej talii oraz rzutu  symetryczną kostką o liczbie oczek podzielnej przez 3?
+                    </p>
+                    <p id="oa61" class="opacity">
+                        Odp. 6/52+1/3
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn61" class="abtn">Pokaż odpowiedź</button><button id="oqbtn61" class="qbtn">Wyjdź</button>
+                    <button id="otbtn61" class="abtn">Czas</button>
+                </div>
+                <div id="oq62" data-timer="45">
+                    <p>
+                        W jednym pokoju przebywa 60 osób, jakie jest przybliżone prawdopodobieństwo że co najmniej dwie z nich mają urodziny tego samego dnia?
+                    </p>
+                    <p id="oa62" class="opacity">
+                        Odp. 99% (birthday paradox)
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn62" class="abtn">Pokaż odpowiedź</button><button id="oqbtn62" class="qbtn">Wyjdź</button>
+                    <button id="otbtn62" class="abtn">Czas</button>
+                </div>
+                <div id="oq63" data-timer="45">
+                    <p>
+                        Jakie jest prawdopodobieństwo wylosowania sześciu kierów (w tym as i król) oraz siedmiu pików (w tym kart o wartościach 4,5,6) podczas losowania dwunastu kart ze standardowej talii?
+                    </p>
+                    <p id="oa63" class="opacity">
+                        Odp. 0 to niemożliwe
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn63" class="abtn">Pokaż odpowiedź</button><button id="oqbtn63" class="qbtn">Wyjdź</button>
+                    <button id="otbtn63" class="abtn">Czas</button>
+                </div>
+                <div id="oq71" data-timer="45">
+                    <p>
+                        Zamień liczbę EDB58 na system binarny.
+                    </p>
+                    <p id="oa71" class="opacity">
+                        11101101101101011000
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn71" class="abtn">Pokaż odpowiedź</button><button id="oqbtn71" class="qbtn">Wyjdź</button>
+                    <button id="otbtn71" class="abtn">Czas</button>
+                </div>
+                <div id="oq72" data-timer="45">
+                    <p>
+                        Zamień liczbę 1101111101111111000101 na system heksadecymalny.
+                    </p>
+                    <p id="oa72" class="opacity">
+                        37DFC5
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn72" class="abtn">Pokaż odpowiedź</button><button id="oqbtn72" class="qbtn">Wyjdź</button>
+                    <button id="otbtn72" class="abtn">Czas</button>
+                </div>
+                <div id="oq73" data-timer="45">
+                    <p>
+                        Zamień liczbę w zapisie oktalnym 555 na liczbę heksadecymalną.
+                    </p>
+                    <p id="oa73" class="opacity">
+                        16D
+                    </p>
+                    <div class=timer>00:00</div>
+                    <button id="oabtn73" class="abtn">Pokaż odpowiedź</button><button id="oqbtn73" class="qbtn">Wyjdź</button>
+                    <button id="otbtn73" class="abtn">Czas</button>
+                </div>
+            </div>
+            <div class="colq">
+                <div id="quest7" class="questsr2 row">Memy<div id="o11">1</div><div id="o12">2</div><div id="o13">3</div></div>
+                <div id="quest1" class="questsr2">Analiza Matematyczna <div id="o21">1</div><div id="o22">2</div><div id="o23">3</div></div>
+                <div id="quest2" class="questsr2">Historia Obliczeń <div id="o31">1</div><div id="o32">2</div><div id="o33">3</div></div>
+                <div id="quest3" class="questsr2">Algorytmika <div id="o41">1</div><div id="o42">2</div><div id="o43">3</div></div>
+            </div>
+            <div class="colq">
+                <div id="quest4" class="questsr2">Zadania logiczne <div id="o51">1</div><div id="o52">2</div><div id="o53">3</div></div>
+                <div id="quest5" class="questsr2">Teoria Prawdopodobieństwa <div id="o61">1</div><div id="o62">2</div><div id="o63">3</div></div>
+                <div id="quest6" class="questsr2">Systemy pozycyjne <div id="o71">1</div><div id="o72">2</div><div id="o73">3</div></div>
+                <div id="licytacja" class="questsr2">LICYTACJA</div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="colteam1" class="col">Drużyna pierścienia
+                <div id="t1pkt"> </div>
+            </div>
+            <div id="colteam2" class="col">Wykopowicze
+                <div id="t2pkt"> </div>
+            </div>
+            <div id="colteam3" class="col">Studenty
+                <div id="t3pkt"> </div>
+            </div>
+            <div id="colteam4" class="col">Meme Familia
+                <div id="t4pkt"> </div>
+            </div>
+            <div id="pulacol" class="col">PULA
+                    <div id="pula"> </div>
+                </div>
+        </div>
+        <div class="row">
+            <span>
                     Drużyna: <input type="text" class="form-control" id="team">
                 </span>
-                <span>
+            <span>
                     Ilość punktów: <input type="text" class="form-control" id="points">
                 </span>
-                <button id="btnadd">Dodaj</button>
-            </div>
-            <a id="btnpowrot2" class="larrow" href="../index.html">&larr;</a>
-            <audio id="losowanie">
+            <button id="btnadd">Dodaj</button>
+        </div>
+        <a id="btnpowrot2" class="larrow" href="../index.html">&larr;</a>
+        <audio id="losowanie">
               <source src="../losowanie.mp3" type="audio/mpeg">
             </audio>
-        </div>
+    </div>
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../js/runda2.js"></script>
+    <script type="text/javascript" src="../js/timer.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </body>
 

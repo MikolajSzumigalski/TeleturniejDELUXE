@@ -1,0 +1,36 @@
+#licytacja{
+    background-image: linear-gradient(to bottom, #f5ff00, #7b3a03);
+    border-color: #262001;
+    color: black;
+}
+#lic{
+    position: absolute;
+    width: 90%;
+    height: 400px;
+    background-color: darkgoldenrod;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border: 10px solid black;
+    border-radius: 20px;
+    font-size: 150%;
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    top: 0;
+}
+#pulacol{
+    height: 100px;
+    width: 400px;
+    background-color: yellow;
+    border: 10px solid black;
+    color: black;
+}
+.licbtn{
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    opacity: 1;
+}

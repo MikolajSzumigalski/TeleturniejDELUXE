@@ -32,7 +32,6 @@ button{
     margin: 10px;
     height: 500px;
 }
-
 h1{
     text-align: center;
 }
@@ -73,22 +72,22 @@ h1::before{
 .colquest{
     height: 60px;
 }
-#colteam1{
+#colteam1, #colteam11{
     background-image: linear-gradient(to bottom, #ff0000, #4b0000);
     height: 100px;
     font-size: 18px;
 }
-#colteam2{
+#colteam2, #colteam12{
     background-image: linear-gradient(to bottom, #037b0d, #001f04);
     height: 100px;
     font-size: 20px;
 }
-#colteam3{
+#colteam3, #colteam13{
     background-image: linear-gradient(to bottom, #a0a700, #202701);
     height: 100px;
     font-size: 20px;
 }
-#colteam4{
+#colteam4, #colteam14{
     background-image: linear-gradient(to bottom, #b800d9, #3b0435);
     height: 100px;
     font-size: 20px;
@@ -179,4 +178,7 @@ h1::before{
 }
 #licznik{
     z-index: 2;
+}
+#colteam11,#colteam12,#colteam13, #colteam14{
+    height: 300px;
 }
