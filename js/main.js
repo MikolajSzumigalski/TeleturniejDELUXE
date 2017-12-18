@@ -48,8 +48,8 @@ document.getElementById("btnadd").addEventListener("click", function() {
 });
 
 document.getElementById("btnpowrot2").addEventListener("click", function() {
-    sessionStorage.count1 = (Number(sessionStorage.count1) - 1000) / 100;
-    sessionStorage.count2 = (Number(sessionStorage.count2) - 1000) / 100;
-    sessionStorage.count3 = (Number(sessionStorage.count3) - 1000) / 100;
-    sessionStorage.count4 = (Number(sessionStorage.count4) - 1000) / 100;
+    sessionStorage.count1 = (Number(sessionStorage.count1) - 2000) / 100;
+    sessionStorage.count2 = (Number(sessionStorage.count2) - 2000) / 100;
+    sessionStorage.count3 = (Number(sessionStorage.count3) - 2000) / 100;
+    sessionStorage.count4 = (Number(sessionStorage.count4) - 2000) / 100;
 });
