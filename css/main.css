@@ -152,7 +152,7 @@ h1::before{
     background-image: linear-gradient(to bottom, brown, #210505);
     border-color: #210505;
 }
-#btnadd{
+#btnadd, #btnpula{
     width: 150px;
     height: 50px;
     position: relative;
